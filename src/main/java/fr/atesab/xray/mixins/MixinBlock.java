@@ -14,17 +14,17 @@ import net.minecraft.world.level.block.state.BlockState;
 
 @Mixin(value = Block.class)
 public class MixinBlock {
-	@Inject(at = @At("RETURN"), method = "shouldRenderFace(" + "Lnet/minecraft/world/level/block/state/BlockState;" + // state
-			"Lnet/minecraft/world/level/BlockGetter;" + // reader
-			"Lnet/minecraft/core/BlockPos;" + // pos
-			"Lnet/minecraft/core/Direction;" + // face
-			"Lnet/minecraft/core/BlockPos;" + // blockPosaaa
-			")Z", // ci
-			cancellable = true)
-	private static void shouldRenderFace(BlockState state, BlockGetter reader, BlockPos pos, Direction face,
-			BlockPos blockPosaaa, CallbackInfoReturnable<Boolean> ci) {
-		XrayMain.getMod().shouldSideBeRendered(state, reader, pos, face, ci);
-	}
+//	@Inject(at = @At("RETURN"), method = "shouldRenderFace(" + "Lnet/minecraft/world/level/block/state/BlockState;" + // state
+//			"Lnet/minecraft/world/level/BlockGetter;" + // reader
+//			"Lnet/minecraft/core/BlockPos;" + // pos
+//			"Lnet/minecraft/core/Direction;" + // face
+//			"Lnet/minecraft/core/BlockPos;" + // blockPosaaa
+//			")Z", // ci
+//			cancellable = true)
+//	private static void shouldRenderFace(BlockState state, BlockGetter reader, BlockPos pos, Direction face,
+//			BlockPos blockPosaaa, CallbackInfoReturnable<Boolean> ci) {
+//		XrayMain.getMod().shouldSideBeRendered(state, reader, pos, face, ci);
+//	}
 
 	private MixinBlock() {
 	}

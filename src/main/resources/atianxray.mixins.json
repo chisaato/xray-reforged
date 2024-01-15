@@ -4,7 +4,7 @@
   "package": "fr.atesab.xray.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [ ],
-  "refmap": "mixins.atianxray.refmap.json",
+  "refmap": "xray-reforged-refmap.json",
   "client": [
     "MixinBlock",
     "MixinLightmapTextureManager",

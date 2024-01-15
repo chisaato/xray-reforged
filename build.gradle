@@ -24,6 +24,7 @@ loom {
                 "atianxray.mixins.json"
         ]
 
+
         // missing access transformers?
         // don't worry, you can still use them!
         // note that your AT *MUST* be located at
@@ -78,6 +79,8 @@ dependencies {
     // at runtime, use the full JEI jar
     // modRuntimeOnly "mezz.jei:jei-1.18.2:${jei_version}"
     modImplementation "maven.modrinth:rubidium:${project.sodium_version}"
+    modImplementation "maven.modrinth:rubidium-extra:0.4.17+mc1.18.2-build.68"
+    modImplementation "maven.modrinth:textrues-rubidium-options:mc1.18.x-v1.0.4"
 }
 
 processResources {
